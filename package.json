@@ -1,0 +1,21 @@
+{
+  "name": "mockraft",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AI-Powered API Mocking Tool",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:core": "npm run build -w packages/core",
+    "build:cli": "npm run build -w packages/cli",
+    "build:web": "npm run build -w packages/web",
+    "dev": "npm run dev -w packages/web",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

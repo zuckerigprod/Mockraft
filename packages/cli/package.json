@@ -1,0 +1,26 @@
+{
+  "name": "@mockraft/cli",
+  "version": "1.0.0",
+  "description": "CLI for Mockraft API mocker",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "mockraft": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "@mockraft/core": "1.0.0",
+    "chalk": "5.4.1",
+    "commander": "13.1.0",
+    "ora": "8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.0",
+    "typescript": "5.7.2"
+  },
+  "license": "MIT"
+}

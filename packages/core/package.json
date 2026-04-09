@@ -1,0 +1,33 @@
+{
+  "name": "@mockraft/core",
+  "version": "1.0.0",
+  "description": "Core engine for Mockraft API mocker",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./browser": "./dist/browser.js",
+    "./i18n/en": "./src/i18n/en.json",
+    "./i18n/ru": "./src/i18n/ru.json"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@apidevtools/swagger-parser": "10.1.1",
+    "cors": "2.8.5",
+    "express": "4.21.2",
+    "http-proxy-middleware": "3.0.3",
+    "i18next": "24.2.2",
+    "yaml": "2.7.0"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.17",
+    "@types/express": "5.0.0",
+    "@types/node": "22.10.0",
+    "typescript": "5.7.2"
+  },
+  "license": "MIT"
+}
