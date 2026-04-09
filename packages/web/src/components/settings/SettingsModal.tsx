@@ -13,15 +13,13 @@ interface SettingsModalProps {
 
 export function SettingsModal({ open, onClose }: SettingsModalProps) {
   const { t } = useTranslation();
-  const { apiKey, aiModel, serverPort, setApiKey, setAiModel, setServerPort } = useStore();
+  const { apiKey, aiModel, setApiKey, setAiModel } = useStore();
   const [key, setKey] = useState(apiKey);
   const [model, setModel] = useState(aiModel);
-  const [port, setPort] = useState(String(serverPort));
 
   const handleSave = () => {
     setApiKey(key);
     setAiModel(model);
-    setServerPort(parseInt(port) || 3456);
     onClose();
   };
 
@@ -52,14 +50,6 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
             ))}
           </select>
         </div>
-
-        <Input
-          label={t("settings.port")}
-          type="number"
-          value={port}
-          onChange={(e) => setPort(e.target.value)}
-          placeholder="3456"
-        />
 
         <div className="flex justify-end gap-2 mt-2">
           <Button variant="secondary" onClick={onClose}>{t("action.cancel")}</Button>

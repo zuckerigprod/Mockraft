@@ -52,5 +52,18 @@
   "cli.endpointsFound": "Найдено эндпоинтов: {{count}}",
   "cli.generating": "Генерация мок-данных...",
   "cli.serverReady": "Сервер готов! Попробуйте эндпоинты:",
-  "cli.configSaved": "Конфигурация сохранена в ~/.mockraftrc"
+  "cli.configSaved": "Конфигурация сохранена в ~/.mockraftrc",
+  "feature.ai.title": "ИИ-генерация данных",
+  "feature.ai.desc": "Реалистичные мок-данные через модели OpenRouter",
+  "feature.server.title": "Мгновенный мок-сервер",
+  "feature.server.desc": "Загрузите спеку — получите рабочий API за секунды",
+  "feature.cli.title": "CLI + Веб",
+  "feature.cli.desc": "Из терминала или браузера — один движок",
+  "feature.openapi.title": "Поддержка OpenAPI",
+  "feature.openapi.desc": "Полный парсинг и валидация OpenAPI 3.x спецификаций",
+  "feature.scenarios.title": "Сценарии",
+  "feature.scenarios.desc": "Симуляция задержек, ошибок, rate limiting",
+  "feature.fallback.title": "Умный фоллбэк",
+  "feature.fallback.desc": "Работает без API-ключа благодаря встроенному генератору",
+  "home.quickstart": "Быстрый старт"
 }

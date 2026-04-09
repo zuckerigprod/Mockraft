@@ -12,10 +12,15 @@
     "build:cli": "npm run build -w packages/cli",
     "build:web": "npm run build -w packages/web",
     "dev": "npm run dev -w packages/web",
+    "server": "npx tsx packages/web/server.ts",
+    "start": "npm run build:web && npx tsx packages/web/server.ts",
     "test": "npm run test --workspaces --if-present"
   },
   "license": "MIT",
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "tsx": "4.21.0"
   }
 }

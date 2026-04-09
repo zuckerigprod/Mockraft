@@ -1,10 +1,12 @@
 import type { ModelInfo } from "./types.js";
 
 export const FREE_MODELS: ModelInfo[] = [
-  { id: "meta-llama/llama-4-scout:free", name: "Llama 4 Scout", tier: "free", maxTokens: 4096 },
-  { id: "mistralai/mistral-small-3.1-24b-instruct:free", name: "Mistral Small 3.1", tier: "free", maxTokens: 4096 },
-  { id: "google/gemma-3-27b-it:free", name: "Gemma 3 27B", tier: "free", maxTokens: 4096 },
-  { id: "qwen/qwen-2.5-72b-instruct:free", name: "Qwen 2.5 72B", tier: "free", maxTokens: 4096 },
+  { id: "google/gemma-4-31b-it:free", name: "Gemma 4 31B", tier: "free", maxTokens: 4096 },
+  { id: "google/gemma-4-26b-a4b-it:free", name: "Gemma 4 26B", tier: "free", maxTokens: 4096 },
+  { id: "nvidia/nemotron-3-super-120b-a12b:free", name: "Nemotron 3 Super 120B", tier: "free", maxTokens: 4096 },
+  { id: "nvidia/nemotron-3-nano-30b-a3b:free", name: "Nemotron 3 Nano 30B", tier: "free", maxTokens: 4096 },
+  { id: "minimax/minimax-m2.5:free", name: "MiniMax M2.5", tier: "free", maxTokens: 4096 },
+  { id: "arcee-ai/trinity-large-preview:free", name: "Trinity Large", tier: "free", maxTokens: 4096 },
 ];
 
 export const PAID_MODELS: ModelInfo[] = [

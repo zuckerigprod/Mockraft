@@ -52,5 +52,18 @@
   "cli.endpointsFound": "{{count}} endpoints found",
   "cli.generating": "Generating mock data...",
   "cli.serverReady": "Server ready! Try these endpoints:",
-  "cli.configSaved": "Configuration saved to ~/.mockraftrc"
+  "cli.configSaved": "Configuration saved to ~/.mockraftrc",
+  "feature.ai.title": "AI-Powered Generation",
+  "feature.ai.desc": "Realistic mock data using OpenRouter AI models",
+  "feature.server.title": "Instant Mock Server",
+  "feature.server.desc": "Upload spec, get working API in seconds",
+  "feature.cli.title": "CLI + Web",
+  "feature.cli.desc": "Use from terminal or browser — same engine",
+  "feature.openapi.title": "OpenAPI Support",
+  "feature.openapi.desc": "Full OpenAPI 3.x spec parsing and validation",
+  "feature.scenarios.title": "Scenarios",
+  "feature.scenarios.desc": "Simulate delays, errors, rate limits",
+  "feature.fallback.title": "Smart Fallback",
+  "feature.fallback.desc": "Works without API key using built-in generator",
+  "home.quickstart": "Quick Start"
 }

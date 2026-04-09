@@ -1,13 +1,19 @@
 import express from "express";
 import cors from "cors";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 import { parseSpec, createMockServer, generateMockData } from "@mockraft/core";
 import type { MockServer } from "@mockraft/core";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const PORT = parseInt(process.env.PORT || "4000");
 
 app.use(cors());
 app.use(express.json({ limit: "10mb" }));
+
+app.use(express.static(join(__dirname, "dist")));
 
 let activeMockServer: MockServer | null = null;
 
@@ -104,6 +110,10 @@ app.post("/api/scenarios", async (req, res) => {
   }
 });
 
+app.get("*", (_req, res) => {
+  res.sendFile(join(__dirname, "dist", "index.html"));
+});
+
 app.listen(PORT, () => {
-  console.log(`Mockraft API server running at http://localhost:${PORT}`);
+  console.log(`Mockraft running at http://localhost:${PORT}`);
 });
